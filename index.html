@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Open+Sans&family=Roboto&family=Yusei+Magic&display=swap"
+        rel="stylesheet">
+
+  </head>
+  <body id="body">
+    <section>
+        <h2>Fonts Generator</h2>
+        <form action="" onsubmit="return false">
+            <input type="range" id="size" name="size" min="8" max="100" value="32" step="4" onChange="changeFontSize()">
+            <label for="size">Font-size</label>
+            <select name="fonts" id="fonts" onChange="changeFontSize()">
+                <option value="'Bodoni Moda', serif">'Bodoni Moda', serif</option>
+                <option value="'Open Sans', sans-serif">'Open Sans', sans-serif</option>
+                <option value="'Roboto', sans-serif">'Roboto', sans-serif</option>
+                <option value="'Yusei Magic', sans-serif">'Yusei Magic', sans-serif</option>
+            </select>
+            <input type="text" name="" id="text" placeholder="type something" onChange="changeFontSize()" value="Test">
+        </form>
+        <h1 id="headline">Test</h1>
+    </section>
+    <form action="">
+        <label for="">red</label>
+        <input type="range" name="" id="red" value="40" min="0" max="255" onchange="changeBackground()">
+        <label for="">green</label>
+        <input type="range" name="" id="green" value="190" min="0" max="255" onchange="changeBackground()">
+        <label for="">blue</label>
+        <input type="range" name="" id="blue" value="130" min="0" max="255" onchange="changeBackground()">
+      </form>
+      <section>
+        <div id="balls1" onclick="changeBackgroundBalls1()"></div>
+        <div id="balls2" onclick="changeBackgroundBalls1()"></div>
+        <div id="balls3" onclick="changeBackgroundBalls1()"></div>
+        <div id="balls4" onclick="changeBackgroundBalls1()"></div>
+      </section>
+      <script src="assets/js/main.js"></script>
+  </body>
+</html>
